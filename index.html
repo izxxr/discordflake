@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/style.css">
+    <link href="https://fonts.googleapis.com/css2?family=PT+Sans&display=swap" rel="stylesheet">
+    <title>Discord Flake</title>
+</head>
+<body>
+  <div align="center">
+    <h1>Discord Flake</h1>
+    <p>Easily convert Discord IDs to date of creations using Discord flake!</p>
+  </div>
+  <div align="center">
+    <input id="snowflake" type="text" placeholder="Discord ID">  
+  </div>
+  <div align="center">
+    <button style="margin-top: 15px" class="btn-primary" onclick="convertSnowflake()">Convert</button>
+    <button style="margin-top: 15px; margin-left: 15px" class="btn-secondary" onclick="resetEverything()">Reset</button>
+  </div>
+  <div align="center">
+    <div id="conversionResults" class="results">
+      <h3 id="timezone" class="result-title">No results here yet.</h3>
+      <p id="time" class="result-body">Enter an ID and hit convert.</p>
+    </div>
+  </div>
+
+  <div align="center">
+    <div>
+      <label for="discordMarkdown" style="margin-right: 10px">Discord Markdown</label>
+      <input disabled id="discordMarkdown" type="text" value="" style="width: 200px; margin-top: 20px;">
+      <button class="btn-copy" id="copyMarkdown" onclick="copyText('discordMarkdown', 'copyMarkdown')">Copy</button>
+    </div>
+    <div>
+      <label for="epoch" style="margin-right: 10px">Epoch Time stamp</label>
+      <input disabled id="epoch" type="text" value="" style="width: 200px; margin-top: 20px;">
+      <button class="btn-copy" id="copyEpoch" onclick="copyText('epoch', 'copyEpoch')">Copy</button>
+    </div> 
+  </div>
+
+  <footer align="center">[ Created with <3 by <a href="https://github.com/nerdguyahmad">NerdGuyAhmad</a> ]</footer>
+
+  <script src="js/script.js"></script>  
+</body>
+</html>

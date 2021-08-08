@@ -1,0 +1,174 @@
+:root {
+    --discord-grey: #23272a;
+    --discord-lighter-grey: #2c2f33;
+    --discord-blurple: #5865f2;
+    --discord-og-blurple: #7289da;
+}
+
+@font-face{
+    font-family: "Whitney";
+    src: url("../assets/fonts/Whitney Medium.ttf");
+}
+
+body {
+    background-color: var(--discord-grey);
+}
+
+h1 {
+    font-family: "Whitney";
+    font-size: 2.5rem;
+    text-shadow: 0 1px 2px white;
+    color: #fff;
+}
+
+p, label, footer {
+    font-family: "Whitney";
+    font-size: 1.1rem;
+    color: #fff;
+}
+
+input {
+    padding-left: 5px;
+    padding-right: 5px;
+    margin-top: 100px;
+    width: 600px;
+    height: 30px;
+
+    font-size: 16px;
+    font-family: "Whitney";
+    color: white;
+    
+    background-color: var(--discord-lighter-grey);
+    
+    outline: none;
+    border-color: var(--discord-grey);
+    border-style: solid;
+    border-width: 1px;
+    border-radius: 3px;
+
+    transition: all 0.2s ease-in-out;
+}
+
+input:hover {
+    border-color: black;
+}
+
+input:focus {
+    border-color: deepskyblue;
+}
+
+.btn-primary {
+    background-color: var(--discord-blurple);
+    
+    font-family: "Whitney";
+    font-weight: 600;
+    font-size: 14px;
+    color: white;
+    
+    width: 100px;
+    height: 40px;
+
+    border-radius: 3px;
+    border-style: solid;
+    border-color: none;
+    border-width: 0;
+
+    transition: all 167ms ease-in-out;
+
+    cursor: pointer;
+}
+.btn-primary:hover {
+    background-color: #4752c4;
+}
+.btn-primary:active {
+    background-color: #3c45a5;
+}
+
+.btn-secondary {
+    background-color: #787a7e;
+    
+    font-family: "Whitney";
+    font-weight: 600;
+    font-size: 14px;
+    color: white;
+    
+    width: 100px;
+    height: 40px;
+
+    border-radius: 3px;
+    border-style: solid;
+    border-color: none;
+    border-width: 0;
+
+    transition: all 167ms ease-in-out;
+
+    cursor: pointer;
+}
+.btn-secondary:hover {
+    background-color: #5e6063;
+}
+.btn-secondary:active {
+    background-color: #4f5154;
+}
+.btn-copy {
+    background-color: var(--discord-lighter-grey);
+
+    width: 60px;
+    height: 30px;
+
+    font-family: "Whitney";
+    font-weight: 600;
+    font-size: 14px;
+    color: white;
+
+    border-radius: 3px;
+    border-style: solid;
+    border-color: none;
+    border-width: 0;
+
+    transition: all 167ms ease-in-out;
+
+    cursor: pointer;
+}
+.btn-copy:hover {
+    background-color: #5e6063;
+}
+.btn-copy:active {
+    background-color: #4f5154;
+}
+
+
+.results {
+    margin-top: 70px;
+    font-family: Whitney;
+    font-size: 1.3rem;
+    color: white;
+
+    border-radius: 3px;
+    border-color: var(--discord-og-blurple);
+    border-width: 5px;
+
+    width: 500px;
+    height: 100px;
+    
+}
+
+.result-title {
+    font-size: 1rem;
+    color: var(--discord-og-blurple);
+    font-family: PT Sans;
+}
+
+.result-body {
+    font-size: 1.3rem;
+    color: #fff;
+    font-family: Whitney;
+}
+
+footer {
+    margin-top: 20vw;
+}
+
+footer a {
+    color: yellow;
+}
